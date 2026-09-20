@@ -1,0 +1,8 @@
+# virtual env
+.venv/
+
+# diagram 
+diagram/
+
+# documentation
+documentation/
