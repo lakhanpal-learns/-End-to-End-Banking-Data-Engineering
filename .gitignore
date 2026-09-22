@@ -6,3 +6,6 @@ diagram/
 
 # documentation
 documentation/
+
+# env file 
+.env
