@@ -9,3 +9,17 @@ documentation/
 
 # env file 
 .env
+
+# PostgreSQL runtime data
+docker/docker/postgres/
+
+# MinIO runtime data
+docker/docker/minio/
+
+# Airflow logs
+docker/docker/logs/
+
+# Temporary dbt wheel downloaded during Docker troubleshooting
+dbt_parser.whl
+
+
