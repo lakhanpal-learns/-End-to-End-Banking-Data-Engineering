@@ -90,8 +90,8 @@ services:
       - ./docker/dags:/opt/airflow/dags
       - ./docker/logs:/opt/airflow/logs
       - ./docker/plugins:/opt/airflow/plugins
-      - ./banking_dbt:/opt/airflow/banking_dbt
-      - ./banking_dbt/.dbt:/home/airflow/.dbt
+      - ../banking_dbt:/opt/airflow/banking_dbt
+      - ../banking_dbt/.dbt:/home/airflow/.dbt
     ports:
       - "8080:8080"
     command: webserver
@@ -111,8 +111,8 @@ services:
       - ./docker/dags:/opt/airflow/dags
       - ./docker/logs:/opt/airflow/logs
       - ./docker/plugins:/opt/airflow/plugins
-      - ./banking_dbt:/opt/airflow/banking_dbt
-      - ./banking_dbt/.dbt:/home/airflow/.dbt
+      - ../banking_dbt:/opt/airflow/banking_dbt
+      - ../banking_dbt/.dbt:/home/airflow/.dbt
     command: scheduler
 
 

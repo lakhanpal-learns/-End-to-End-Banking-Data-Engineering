@@ -1,13 +1,13 @@
 # virtual env
 .venv/
 
-# diagram 
+# diagram
 diagram/
 
 # documentation
 documentation/
 
-# env file 
+# env file
 .env
 
 # PostgreSQL runtime data
@@ -22,4 +22,21 @@ docker/docker/logs/
 # Temporary dbt wheel downloaded during Docker troubleshooting
 dbt_parser.whl
 
+# GitHub Actions cache
+.github/.cache/
 
+# dbt cache / configuration
+banking_dbt/.dbt/
+banking_dbt/logs/
+banking_dbt/target/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
