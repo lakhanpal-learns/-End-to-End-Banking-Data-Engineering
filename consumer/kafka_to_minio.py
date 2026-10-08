@@ -5,7 +5,6 @@ from datetime import datetime
 import boto3
 import pandas as pd
 from dotenv import load_dotenv
-
 from kafka import KafkaConsumer
 
 # -----------------------------
