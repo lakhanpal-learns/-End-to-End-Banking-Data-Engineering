@@ -1,12 +1,13 @@
-import time
-import psycopg2
-from decimal import Decimal, ROUND_DOWN
-from faker import Faker
-import random
 import argparse
-import sys
 import os
+import random
+import sys
+import time
+from decimal import ROUND_DOWN, Decimal
+
+import psycopg2
 from dotenv import load_dotenv
+from faker import Faker
 
 load_dotenv()
 
