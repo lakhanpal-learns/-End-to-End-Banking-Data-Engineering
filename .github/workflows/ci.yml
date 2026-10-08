@@ -41,7 +41,11 @@ jobs:
 
       - name: Run linters
         run: |
-          pip install ruff
+          pip install ruff==0.17.0
+          ruff --version
+          git status --short
+          git show HEAD:consumer/kafka_to_minio.py
+          ruff check . --diff
           ruff check .
 
       - name: Run unit tests
